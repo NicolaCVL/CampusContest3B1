@@ -88,3 +88,31 @@
     font-weight: 500;
 }
 
+/*Media Queries*/
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .navigbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-image: url(../Image/fonddegrade.jpg);
+        background-size: cover;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .navigbar .menu li{
+        display: block;
+    }
+
+    .navigbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
