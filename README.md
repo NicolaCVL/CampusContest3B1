@@ -8,15 +8,15 @@
 >Il  s’agit  d’une  despremièresétapesde   la   création   de   votre   empreinte   numériqueprofessionnelle. Nous ne vous demandons pas d’ajouter du contenu sur votre site, mais  de  préparer  sa structure.
 ## 2. **Étapes de production**
 
->> 2.1. Imaginer la structure de votre site, propice au partage de vos projets
+>2.1. Imaginer la structure de votre site, propice au partage de vos projets
 
->> 2.2.  Penser UX (User eXperience)
+>2.2.  Penser UX (User eXperience)
 
->> 2.3.  Créer sur Git
+>2.3.  Créer sur Git
 
->> 2.4.  Réaliser des commits réguliers
+>2.4.  Réaliser des commits réguliers
 
->> 2.5.  Vérifier quel'accès à votre repository soit public
+>2.5.  Vérifier quel'accès à votre repository soit public
 
 ## 3. Barème
 
