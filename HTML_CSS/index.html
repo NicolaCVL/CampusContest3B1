@@ -1,62 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://image.flaticon.com/icons/png/512/957/957342.png">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="linear-gradient"></div>
-    <nav class="navigbar">
-        <div class="max-width">
-            <div class="logo"><a href="index.html">My Port<span>folio</span></a></div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars">&#9776;</i>
-            </div>
-        </div>
-    </nav>
-
-    <!--Debut Section Home-->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hey, My name is</div>
-                <div class="text-2">Nicola Civile</div>
-                <div class="text-3">And I'm a Student in <span>Web Development</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!--Debut Section About-->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="https://i.redd.it/vdhgv54ndnj21.png" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Nicola and I'm a <span>Junior Web Developper</span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias optio maxime magni voluptatum quis facere iure quod, ea dignissimos architecto ducimus veniam velit! Accusantium dolorum laboriosam perferendis, numquam, eius dignissimos sunt temporibus molestiae, eaque vel omnis fugiat! Excepturi, nam perspiciatis. Libero reiciendis nesciunt totam, rerum, expedita deserunt assumenda neque eius, velit possimus nulla itaque fugiat! Repudiandae dolorem eligendi accusamus!</p>
-                    <a href="#">Download My CV</a>
+    <body>
+        <div class="linear-gradient"></div>
+        <nav class="navigbar">
+            <div class="max-width">
+                <div class="logo"><a href="index.html">My Port<span>folio</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars">&#9776;</i>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
+        <!--Debut Section Home-->
+        <section class="home" id="home">
+            <div class="max-width">
+                <h2 class="hidetitle">Home</h2>
+                <div class="home-content">
+                    <div class="text-1">Hey, My name is</div>
+                    <div class="text-2">Nicola Civile</div>
+                    <div class="text-3">And I'm a Student in <span>Web Development</span></div>
+                </div>
+            </div>
+        </section>
 
+        <!--Debut Section About-->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="https://i.redd.it/vdhgv54ndnj21.png" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">I'm Nicola and I'm a <span>Junior Web Developper</span></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias optio maxime magni voluptatum quis facere iure quod, ea dignissimos architecto ducimus veniam velit! Accusantium dolorum laboriosam perferendis, numquam, eius dignissimos sunt temporibus molestiae, eaque vel omnis fugiat! Excepturi, nam perspiciatis. Libero reiciendis nesciunt totam, rerum, expedita deserunt assumenda neque eius, velit possimus nulla itaque fugiat! Repudiandae dolorem eligendi accusamus!</p>
+                        <a href="#">Download My CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!--Debut Section My Work-->
+        <section class="work" id="work">
+            <div class="max-width">
+                <h2 class="title">My Work</h2>
+                <div class="work-content">
+                    <div class="card">
+                        <div class="box">
+                            <div class="text">Pix'Man</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum dolorum tempora cumque laboriosam eius provident. Nobis ipsum dolorum dolores.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="text">Louis Vuitton</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum dolorum tempora cumque laboriosam eius provident. Nobis ipsum dolorum dolores.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="text">1083</div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum dolorum tempora cumque laboriosam eius provident. Nobis ipsum dolorum dolores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!--Debut Section My Skills-->
+        <section class="skill" id="skill">
+            <div class="max-width">
+                <h2 class="title">My Skills</h2>
+                <div class="skill-content">
+                    <div class="column left">
+                        <div class="text">My Technical Skills</div>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
 
-</body>
+                    <div class="text-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Debut Section Contact-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact</h2>
+                <div class="home-content">
+                    <div class="text-1"></div>
+                    <div class="text-2"></div>
+                    <div class="text-3"></div>
+                </div>
+            </div>
+        </section>
+
+    </body>
 </html>

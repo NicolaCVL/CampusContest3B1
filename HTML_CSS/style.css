@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+.headtitle{
+    display: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -105,15 +109,11 @@ html{
     font-weight: 500;
 }
 
-/*Style Section About*/
+/*Style Section Général*/
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -122,7 +122,7 @@ section{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -132,9 +132,7 @@ section{
     background: black;
     transform: translateX(-50%);
 }
-
-.about .title::after{
-    content: "Who I am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -144,7 +142,18 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+
+/*Style Section About*/
+.about, .work{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about .title::after{
+    content: "Who I am";
+}
+
+.about .about-content,
+.work .work-content{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -196,6 +205,56 @@ section{
     background: none;
 }
 
+/*Style Section MyWork*/
+.work{
+    color: #fff;
+    background: #111;
+}
+.work .title::before{
+    background: #fff;
+}
+.work .title::after{
+    background: #111;
+    content: "What I have done";
+}
+
+.work .work-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.work .work-content .card:hover{
+    background:rgb(199, 45, 255);
+}
+
+.work .work-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.work .work-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.work .work-content .card .text{
+    color: rgb(199, 45, 255);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.work .work-content .card:hover .text{
+    color: #fff;
+}
+
+/*Style Section My Skills*/
+
+
+
+
+
 /*Media Queries*/
 @media(max-width: 1900px){
     .about .about-content .left img{
@@ -230,11 +289,6 @@ section{
     }
     .about .about-content .column{
         width: 50%;
-    }
-    .about .about-content .left img{
-        height: 400px;
-        width: 400px;
-        object-fit: cover;
     }
 }
 
@@ -302,13 +356,56 @@ section{
 
     .about .about-content .right p{
         flex: 100%;
-
+    }
+    .work .work-content .card{
+        width: calc(80%-10px);
+        margin-bottom: 20px;
     }
 }
+@media (max-width: 800px){
+    .max-width{
+        max-width: 500px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right p{
+        flex: 100%;
+    }
 
+    .work .work-content .card{
+        width: calc(80%-10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .work .work-content .card{
+        width: 100%;
+    }
+}
 @media (max-width: 450px){
     .max-width{
         padding: 0 50px;
+    }
+    section .title::after{
+        font-size: 15px;
     }
 
     .navigbar .menu{
@@ -360,5 +457,9 @@ section{
     .about .about-content .right p{
         flex: 100%;
 
+    }
+    .work .work-content .card{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
