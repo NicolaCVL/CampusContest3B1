@@ -6,9 +6,13 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .max-width{
-    max-width: 2300px;
-    padding: 0 80px;
+    max-width: 2000px;
+    padding: 0 50px;
     margin: auto;
 
 }
@@ -18,7 +22,8 @@
     position: fixed;
     width: 100%;
     padding: 15px 0;
-    background-image: url(../Image/fonddegrade.jpg);
+    z-index: 999;
+    background-image: url(https://www.publicdomainpictures.net/pictures/240000/nahled/pink-blue-background.jpg);
     background-size: cover;
     font-family: 'Ubuntu';
 }
@@ -57,11 +62,23 @@
 .navigbar .menu li a:hover{
     color: white;
 }
+/*Style Bouton Menu*/
+.menu-btn{
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn i:hover{
+    color: white;
+    transition: color 0.3s ease;
+}
 
 /*Style Section Home*/
 .home{
     display: flex;
-    background-image: url(../Image/fonddegrade.jpg);
+    background-image: url(https://www.publicdomainpictures.net/pictures/240000/nahled/pink-blue-background.jpg);
     background-size: cover;
     height: 100vh;
     color: black;
@@ -69,7 +86,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
-    margin: auto 0 auto 250px;
+    margin: auto 0 auto 0px;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -88,8 +105,208 @@
     font-weight: 500;
 }
 
+/*Style Section About*/
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "Who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(199, 45, 255);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 35%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: rgb(199, 45, 255);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+/*Bouton Download My CV*/
+.about .about-content .right a{
+    display: inline-block;
+    background-color: rgb(199, 45, 255);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(199, 45, 255);
+    transition: all 0.3s ease;
+}
+
+/*Surligneage sur le Bouton CV*/
+.about .about-content .right a:hover{
+    color: rgb(199, 45, 255);
+    background: none;
+}
+
 /*Media Queries*/
-@media (max-width: 947px){
+@media(max-width: 1900px){
+    .about .about-content .left img{
+        height: 600px;
+        width: 600px;
+        object-fit: cover;
+    }
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 1300px){
+
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .about .about-content .column{
+        width: 50%;
+    }
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1104px){
+
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .about .about-content .column{
+        width: 50%;
+    }
+    .about .about-content .left img{
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 960px){
+
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .navigbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-image: url(https://www.publicdomainpictures.net/pictures/240000/nahled/pink-blue-background.jpg);
+        background-size: cover;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .navigbar .menu li{
+        display: block;
+    }
+
+    .navigbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-3{
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right p{
+        flex: 100%;
+
+    }
+}
+
+@media (max-width: 450px){
     .max-width{
         padding: 0 50px;
     }
@@ -98,9 +315,9 @@
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: 0;
+        left: -100%;
         top: 0;
-        background-image: url(../Image/fonddegrade.jpg);
+        background-image: url(https://www.publicdomainpictures.net/pictures/240000/nahled/pink-blue-background.jpg);
         background-size: cover;
         text-align: center;
         padding-top: 50px;
@@ -114,5 +331,34 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+    .navigbar .menu.active{
+        left: 0;
+    }
+    .navigbar .menu li{
+        display: block;
+    }
+    .about .about-content .left img{
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+    }
+
+    .max-width{
+        max-width: 500px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right p{
+        flex: 100%;
+
     }
 }
