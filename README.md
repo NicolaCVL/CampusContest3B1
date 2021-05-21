@@ -5,7 +5,8 @@
 * Ce portfolio aura notamment pour fonction de: 
     * Vous présenter; 
     * Rassembler l’ensemble de vos projets afin de mettre en valeur votre profil sur le Web. 
->Il  s’agit  d’une  despremièresétapesde   la   création   de   votre   empreinte   numériqueprofessionnelle. Nous ne vous demandons pas d’ajouter du contenu sur votre site, mais  de  préparer  sa structure.
+>Il  s’agit  d’une  des premières étapes de   la   création   de   votre   empreinte   numérique professionnelle. Nous ne vous demandons pas d’ajouter du contenu sur votre site, mais  de  préparer  sa structure.
+
 ## 2. **Étapes de production**
 
 >2.1. Imaginer la structure de votre site, propice au partage de vos projets
@@ -46,10 +47,6 @@
 
 ## 4. LIENS UTILISÉS :
 
-* 1/ MODELE CV : https://www.ahasessionsdailynews.org/x/2020/11/best-resume-cv-vcard-templates-free-premium-freshdesignweb-template-simple-for-students-692x385.jpg
+* 1/ SITE POUR UTILISATION FLEX : https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-basics
 
-* 2/ SITE POUR FAIRE LE MENU VERTICAL : https://www.frogweb.fr/menu-deroulant-vertical/
-
-* 3/ SITE POUR UTILISATION FLEX : https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-basics
-
-* 4/ LIEN VERS MON SITE SOUS GITHUB :
+* 2/ LIEN VERS MON SITE SOUS GITHUB :

@@ -113,12 +113,13 @@ html{
 section{
     padding: 100px 0;
 }
-.about, .work, .skills{
+.about, .work, .skills, .contact{
     font-family: 'Ubuntu', sans-serif;
 }
 .about .about-content,
 .work .work-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -245,7 +246,7 @@ section .title::after{
     color: #fff;
 }
 
-/*Style Section My Skills*/
+/*Style Section MySkills*/
 .skills .title::after{
     content: "What I can do";
 }
@@ -328,7 +329,7 @@ section .title::after{
 /*Style Section Contact*/
 
 .contact .title::after{
-    content: "Message me";
+    content: "Get in touch";
 }
 
 /*Media Queries*/
@@ -363,8 +364,10 @@ section .title::after{
     .home .max-width{
         margin-left: 0px;
     }
-    .about .about-content .column{
-        width: 50%;
+    .work .work-content .card,
+    .skills .skills-content .column{
+        width: calc(50%-25px);
+        margin-bottom: 20px;
     }
 }
 
@@ -433,12 +436,13 @@ section .title::after{
     .about .about-content .right p{
         flex: 100%;
     }
-    .work .work-content .card{
-        width: calc(80%-10px);
+    .work .work-content .card,
+    .skills .skills-content .column{
+        width: calc(50%-25px);
         margin-bottom: 20px;
     }
 }
-@media (max-width: 800px){
+@media (max-width: 787px){
     .max-width{
         max-width: 500px;
     }
@@ -454,9 +458,9 @@ section .title::after{
         flex: 100%;
     }
 
-    .work .work-content .card{
-        width: calc(80%-10px);
-        margin-bottom: 20px;
+    .work .work-content .card,
+    .skills .skills-content .column{
+        width: 100%;
     }
 }
 @media (max-width: 690px){
@@ -472,7 +476,8 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
     }
-    .work .work-content .card{
+    .work .work-content .card,
+    .skills .skills-content .column{
         width: 100%;
     }
 }
@@ -534,7 +539,8 @@ section .title::after{
         flex: 100%;
 
     }
-    .work .work-content .card{
+    .work .work-content .card,
+    .skills .skills-content .column{
         width: 100%;
         margin-bottom: 20px;
     }
